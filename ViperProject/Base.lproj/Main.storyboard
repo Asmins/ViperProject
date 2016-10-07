@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqg-AU-m5m">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqg-AU-m5m">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,11 +30,17 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.1661497887" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="jE9-Bi-GVH" kind="show" id="Y1p-Lm-iuy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMI-dn-nYd">
                                 <state key="normal" title="SingUp">
                                     <color key="titleColor" red="1" green="0.0" blue="0.15923816120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="zAM-nd-ZdE" kind="show" id="9hp-g5-Nor"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -51,15 +57,16 @@
                             <constraint firstItem="dSN-Wg-S5u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="so5-69-kv9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="yHa-sh-JIa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="137" y="139"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="ZKJ-9Z-Ae3">
             <objects>
-                <viewController id="jE9-Bi-GVH" sceneMemberID="viewController">
+                <viewController id="jE9-Bi-GVH" customClass="LoginViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gwp-pv-sq3"/>
                         <viewControllerLayoutGuide type="bottom" id="0i8-x0-5b3"/>
@@ -85,19 +92,25 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y66-Pw-6jb">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sV0-ke-n2K">
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="logibButton:" destination="jE9-Bi-GVH" eventType="touchUpInside" id="lOM-B7-mxk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb9-DS-WwX">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Dismiss">
                                     <color key="titleColor" red="1" green="0.0" blue="0.15923816120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="dissmisToRootView:" destination="jE9-Bi-GVH" eventType="touchUpInside" id="oOg-xN-j8p"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -107,6 +120,7 @@
                             <constraint firstItem="sV0-ke-n2K" firstAttribute="top" secondItem="y66-Pw-6jb" secondAttribute="bottom" constant="15" id="571-OK-Ozg"/>
                             <constraint firstItem="y66-Pw-6jb" firstAttribute="centerX" secondItem="NgD-yJ-het" secondAttribute="centerX" id="AnQ-Xv-hmL"/>
                             <constraint firstAttribute="trailing" secondItem="JcY-Ki-9Py" secondAttribute="trailing" constant="20" id="BJs-Si-q19"/>
+                            <constraint firstItem="Tal-8C-AhY" firstAttribute="top" secondItem="gwp-pv-sq3" secondAttribute="bottom" constant="52" id="FOv-9q-fgF"/>
                             <constraint firstItem="Tal-8C-AhY" firstAttribute="leading" secondItem="NgD-yJ-het" secondAttribute="leading" constant="20" id="FkT-78-buq"/>
                             <constraint firstItem="y66-Pw-6jb" firstAttribute="top" secondItem="JcY-Ki-9Py" secondAttribute="bottom" constant="10" id="Kez-cQ-I5M"/>
                             <constraint firstAttribute="trailing" secondItem="Tal-8C-AhY" secondAttribute="trailing" constant="20" id="Nf6-WI-N8O"/>
@@ -119,19 +133,22 @@
                             <constraint firstAttribute="trailing" secondItem="gb9-DS-WwX" secondAttribute="trailing" constant="15" id="er6-dC-TLo"/>
                             <constraint firstItem="gb9-DS-WwX" firstAttribute="top" secondItem="Tal-8C-AhY" secondAttribute="bottom" constant="10" id="faY-Ca-AMS"/>
                             <constraint firstItem="Hgc-02-Z1F" firstAttribute="leading" secondItem="NgD-yJ-het" secondAttribute="leading" constant="330" id="gqZ-Xq-TWJ"/>
-                            <constraint firstItem="Tal-8C-AhY" firstAttribute="top" secondItem="gwp-pv-sq3" secondAttribute="bottom" constant="40" id="nQ2-US-5E5"/>
                             <constraint firstAttribute="trailing" secondItem="sV0-ke-n2K" secondAttribute="trailing" constant="160" id="wdc-G2-sxd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passWordTextField" destination="y66-Pw-6jb" id="bbE-YT-Y0P"/>
+                        <outlet property="textField" destination="JcY-Ki-9Py" id="OYA-KX-zsk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4DV-WM-c10" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="813"/>
+            <point key="canvasLocation" x="137" y="883"/>
         </scene>
-        <!--View Controller-->
+        <!--Sing Up View Controller-->
         <scene sceneID="4l0-UV-cE2">
             <objects>
-                <viewController id="zAM-nd-ZdE" sceneMemberID="viewController">
+                <viewController id="zAM-nd-ZdE" customClass="SingUpViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kWU-dU-DSj"/>
                         <viewControllerLayoutGuide type="bottom" id="Dnr-D9-aZQ"/>
@@ -173,12 +190,15 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQg-RZ-H35">
                                 <state key="normal" title="SingUp">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="singUpButton:" destination="zAM-nd-ZdE" eventType="touchUpInside" id="2aS-gt-xOQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -202,15 +222,20 @@
                             <constraint firstItem="lUu-sV-bsX" firstAttribute="top" secondItem="XOg-KP-MSw" secondAttribute="bottom" constant="10" id="xka-ti-4i2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="lUu-sV-bsX" id="72f-QQ-41U"/>
+                        <outlet property="nameTextField" destination="XOg-KP-MSw" id="dTb-8c-lfy"/>
+                        <outlet property="passwordTextField" destination="wkJ-uc-Lqi" id="dA6-mK-qIA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kRg-P4-xz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="813"/>
+            <point key="canvasLocation" x="849" y="883"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="HWc-JI-uDi">
             <objects>
-                <viewController id="Itv-aR-Ymz" sceneMemberID="viewController">
+                <viewController id="Itv-aR-Ymz" customClass="HomeViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zp7-F7-bgt"/>
                         <viewControllerLayoutGuide type="bottom" id="hvI-i3-wPx"/>
@@ -229,12 +254,18 @@
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" red="1" green="0.0" blue="0.15923816120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="logOutButton:" destination="Itv-aR-Ymz" eventType="touchUpInside" id="gqZ-Vy-Iox"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZ8-MG-XiK">
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Delete User">
                                     <color key="titleColor" red="1" green="0.0" blue="0.15923816120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="deleteUserButton:" destination="Itv-aR-Ymz" eventType="touchUpInside" id="Ufm-kR-IBV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -253,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LH3-Ne-W9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="140"/>
+            <point key="canvasLocation" x="849" y="139"/>
         </scene>
     </scenes>
 </document>

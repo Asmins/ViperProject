@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		1DBD92AE22F09A16983D89B3 /* Pods_ViperProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B551A4238DE2ED2D591DB40 /* Pods_ViperProject.framework */; };
 		8406293B1DA7C9AC0011DB73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406293A1DA7C9AC0011DB73 /* AppDelegate.swift */; };
-		8406293D1DA7C9AC0011DB73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8406293C1DA7C9AC0011DB73 /* ViewController.swift */; };
 		840629401DA7C9AC0011DB73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8406293E1DA7C9AC0011DB73 /* Main.storyboard */; };
 		840629421DA7C9AD0011DB73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840629411DA7C9AD0011DB73 /* Assets.xcassets */; };
 		840629451DA7C9AD0011DB73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840629431DA7C9AD0011DB73 /* LaunchScreen.storyboard */; };
+		849FB7B51DA7D88100A333E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FB7B41DA7D88100A333E1 /* User.swift */; };
+		849FB7B71DA7D9DE00A333E1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FB7B61DA7D9DE00A333E1 /* HomeViewController.swift */; };
+		849FB7B91DA7DAAF00A333E1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FB7B81DA7DAAF00A333E1 /* UserModel.swift */; };
+		849FB7BB1DA7DBCD00A333E1 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FB7BA1DA7DBCD00A333E1 /* RealmModel.swift */; };
+		849FB7BD1DA7DEC700A333E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FB7BC1DA7DEC700A333E1 /* LoginViewController.swift */; };
+		849FB7BF1DA7E2C200A333E1 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FB7BE1DA7E2C200A333E1 /* SplashViewController.swift */; };
+		849FB7C11DA7EABC00A333E1 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FB7C01DA7EABC00A333E1 /* SingUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +26,17 @@
 		5B551A4238DE2ED2D591DB40 /* Pods_ViperProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		840629371DA7C9AC0011DB73 /* ViperProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8406293A1DA7C9AC0011DB73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8406293C1DA7C9AC0011DB73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8406293F1DA7C9AC0011DB73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840629411DA7C9AD0011DB73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840629441DA7C9AD0011DB73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840629461DA7C9AD0011DB73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849FB7B41DA7D88100A333E1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		849FB7B61DA7D9DE00A333E1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		849FB7B81DA7DAAF00A333E1 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		849FB7BA1DA7DBCD00A333E1 /* RealmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		849FB7BC1DA7DEC700A333E1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		849FB7BE1DA7E2C200A333E1 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		849FB7C01DA7EABC00A333E1 /* SingUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
 		9B29F8B670E5CEC240FC9592 /* Pods-ViperProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperProject/Pods-ViperProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,14 +81,36 @@
 		840629391DA7C9AC0011DB73 /* ViperProject */ = {
 			isa = PBXGroup;
 			children = (
+				849FB7B31DA7D86200A333E1 /* Model */,
+				849FB7B21DA7D85900A333E1 /* Controller */,
 				8406293A1DA7C9AC0011DB73 /* AppDelegate.swift */,
-				8406293C1DA7C9AC0011DB73 /* ViewController.swift */,
 				8406293E1DA7C9AC0011DB73 /* Main.storyboard */,
 				840629411DA7C9AD0011DB73 /* Assets.xcassets */,
 				840629431DA7C9AD0011DB73 /* LaunchScreen.storyboard */,
 				840629461DA7C9AD0011DB73 /* Info.plist */,
 			);
 			path = ViperProject;
+			sourceTree = "<group>";
+		};
+		849FB7B21DA7D85900A333E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				849FB7B61DA7D9DE00A333E1 /* HomeViewController.swift */,
+				849FB7BC1DA7DEC700A333E1 /* LoginViewController.swift */,
+				849FB7BE1DA7E2C200A333E1 /* SplashViewController.swift */,
+				849FB7C01DA7EABC00A333E1 /* SingUpViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		849FB7B31DA7D86200A333E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				849FB7B41DA7D88100A333E1 /* User.swift */,
+				849FB7B81DA7DAAF00A333E1 /* UserModel.swift */,
+				849FB7BA1DA7DBCD00A333E1 /* RealmModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		8A8EA882578947C353A382AF /* Pods */ = {
@@ -212,8 +246,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8406293D1DA7C9AC0011DB73 /* ViewController.swift in Sources */,
+				849FB7BD1DA7DEC700A333E1 /* LoginViewController.swift in Sources */,
 				8406293B1DA7C9AC0011DB73 /* AppDelegate.swift in Sources */,
+				849FB7C11DA7EABC00A333E1 /* SingUpViewController.swift in Sources */,
+				849FB7B91DA7DAAF00A333E1 /* UserModel.swift in Sources */,
+				849FB7B51DA7D88100A333E1 /* User.swift in Sources */,
+				849FB7BB1DA7DBCD00A333E1 /* RealmModel.swift in Sources */,
+				849FB7BF1DA7E2C200A333E1 /* SplashViewController.swift in Sources */,
+				849FB7B71DA7D9DE00A333E1 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
