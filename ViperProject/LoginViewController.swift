@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var passWordTextField: UITextField!
     
     var realmManager = RealmModel()
-    
+    var array = [UserModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,7 +25,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func logibButton(_ sender: AnyObject) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
+        self.realmManager.getUserFromDataBase()
+        array = self.realmManager.result
+        self.realmManager.login(email: textField.text!, password: passWordTextField.text!, data: array)
+   }  
 }

@@ -23,6 +23,7 @@ class SingUpViewController: UIViewController {
     @IBAction func singUpButton(_ sender: AnyObject) {
         if emailTextField.text != nil || passwordTextField.text != nil {
             realmModel.writeInDB(userName: nameTextField.text!, password: passwordTextField.text!, email: emailTextField.text!)
+            self.dismiss(animated: true, completion: nil)
         }else{
             let alert = UIAlertController(title: "ERROR", message: "Please enter data", preferredStyle: .alert)
             let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
@@ -31,4 +32,7 @@ class SingUpViewController: UIViewController {
         }
      }
     
+    @IBAction func dismissButton(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

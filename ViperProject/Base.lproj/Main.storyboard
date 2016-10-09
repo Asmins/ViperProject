@@ -167,6 +167,9 @@
                                 <state key="normal" title="Dismiss">
                                     <color key="titleColor" red="1" green="0.0" blue="0.15923816120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="dismissButton:" destination="zAM-nd-ZdE" eventType="touchUpInside" id="Vh0-bE-SHN"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XOg-KP-MSw">
                                 <constraints>
