@@ -14,6 +14,9 @@ class SingUpViewController: UIViewController {
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    var singUpWireframe:SingUpWireframe?
+    var singUpInteractor:SingUpInteractor?
+    
     var realmModel = RealmModel()
     
     override func viewDidLoad() {
@@ -22,8 +25,8 @@ class SingUpViewController: UIViewController {
     
     @IBAction func singUpButton(_ sender: AnyObject) {
         if emailTextField.text != nil || passwordTextField.text != nil {
-            realmModel.writeInDB(userName: nameTextField.text!, password: passwordTextField.text!, email: emailTextField.text!)
-            self.dismiss(animated: true, completion: nil)
+            self.singUpInteractor?.createUser(userName: nameTextField.text!, password: passwordTextField.text!, email: emailTextField.text!)
+            self.singUpWireframe?.showHomeViewController()
         }else{
             let alert = UIAlertController(title: "ERROR", message: "Please enter data", preferredStyle: .alert)
             let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
@@ -33,6 +36,6 @@ class SingUpViewController: UIViewController {
      }
     
     @IBAction func dismissButton(_ sender: AnyObject) {
-        self.dismiss(animated: true, completion: nil)
+        self.singUpWireframe?.dismissSingUpViewController()
     }
 }

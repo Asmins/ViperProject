@@ -9,7 +9,7 @@
         <!--Sing Up View Controller-->
         <scene sceneID="Nzx-an-ejl">
             <objects>
-                <viewController id="4tI-ee-jg9" customClass="SingUpViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SingUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4tI-ee-jg9" customClass="SingUpViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zpa-Xw-yMC"/>
                         <viewControllerLayoutGuide type="bottom" id="D5P-cb-qDR"/>

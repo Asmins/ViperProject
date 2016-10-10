@@ -9,6 +9,14 @@
 import UIKit
 
 class SingUpInteractor {
+    var viewController = SingUpViewController()
+    var realmModel = RealmModel()
+}
 
+extension SingUpInteractor: SingUpInteractorProtocol {
+
+    func createUser(userName:String,password:String,email:String) {
+        self.realmModel.writeInDB(userName: userName, password: password, email: email)
+    }
     
 }

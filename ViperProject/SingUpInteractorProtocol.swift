@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol SingUpInteractorProtocol {
+    func createUser(userName:String,password:String,email:String)
+}
