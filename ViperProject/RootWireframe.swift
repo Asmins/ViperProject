@@ -10,4 +10,13 @@ import UIKit
 
 class RootWireframe {
     
+    let splashWireframe = SplashWireframe()
+    
+    func application(didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?,window:UIWindow) -> Bool {
+        self.splashWireframe.window = window
+        self.splashWireframe.showSplashViewController()
+        return true
+    }
+
+    
 }

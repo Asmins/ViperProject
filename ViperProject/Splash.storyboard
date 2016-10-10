@@ -9,7 +9,7 @@
         <!--Splash View Controller-->
         <scene sceneID="yNi-UK-DEu">
             <objects>
-                <viewController id="ZmK-n2-XL7" customClass="SplashViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZmK-n2-XL7" customClass="SplashViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rFc-e0-ugA"/>
                         <viewControllerLayoutGuide type="bottom" id="2uf-6V-ADL"/>

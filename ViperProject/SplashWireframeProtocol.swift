@@ -6,4 +6,10 @@
 //  Copyright © 2016 Mozi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol SplashWireframeProtocol {
+    func showSplashViewController()
+    func showLoginViewController()
+    func showSingUpViewController()
+}

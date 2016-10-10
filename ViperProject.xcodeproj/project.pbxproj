@@ -132,10 +132,10 @@
 				84CCD9621DAB7AF5001B6D1E /* Module */,
 				849FB7B31DA7D86200A333E1 /* RealmModel */,
 				8406293A1DA7C9AC0011DB73 /* AppDelegate.swift */,
+				84CCD9931DAB7F05001B6D1E /* RootWireframe.swift */,
 				840629411DA7C9AD0011DB73 /* Assets.xcassets */,
 				840629431DA7C9AD0011DB73 /* LaunchScreen.storyboard */,
 				840629461DA7C9AD0011DB73 /* Info.plist */,
-				84CCD9931DAB7F05001B6D1E /* RootWireframe.swift */,
 			);
 			path = ViperProject;
 			sourceTree = "<group>";
