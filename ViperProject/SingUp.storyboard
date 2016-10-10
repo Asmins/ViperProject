@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2327e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sing Up View Controller-->
+        <scene sceneID="Nzx-an-ejl">
+            <objects>
+                <viewController id="4tI-ee-jg9" customClass="SingUpViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zpa-Xw-yMC"/>
+                        <viewControllerLayoutGuide type="bottom" id="D5P-cb-qDR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U6x-pN-E8f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SingUp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raN-ZK-YEc">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.15923816120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0U-Hq-enI">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.15923816120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissButton:" destination="4tI-ee-jg9" eventType="touchUpInside" id="LFM-vK-Tas"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r0L-4a-XCk">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0KW-xq-EYu"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XhN-5O-O1y">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1Fb-8r-DhO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NZo-ml-6ez">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pRf-gc-dg8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7d-sy-4g7">
+                                <state key="normal" title="SingUp">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="singUpButton:" destination="4tI-ee-jg9" eventType="touchUpInside" id="RsF-TD-03F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r0L-4a-XCk" firstAttribute="leading" secondItem="U6x-pN-E8f" secondAttribute="leading" constant="20" id="17Z-bL-nGU"/>
+                            <constraint firstAttribute="trailing" secondItem="p7d-sy-4g7" secondAttribute="trailing" constant="20" id="A5Z-3A-Xud"/>
+                            <constraint firstItem="p7d-sy-4g7" firstAttribute="leading" secondItem="U6x-pN-E8f" secondAttribute="leading" constant="20" id="HB7-Yt-DlI"/>
+                            <constraint firstAttribute="trailing" secondItem="W0U-Hq-enI" secondAttribute="trailing" constant="15" id="HBQ-59-sbD"/>
+                            <constraint firstItem="XhN-5O-O1y" firstAttribute="top" secondItem="r0L-4a-XCk" secondAttribute="bottom" constant="10" id="HzB-Wz-15l"/>
+                            <constraint firstItem="NZo-ml-6ez" firstAttribute="leading" secondItem="U6x-pN-E8f" secondAttribute="leading" constant="20" id="Idf-2y-iI1"/>
+                            <constraint firstItem="r0L-4a-XCk" firstAttribute="top" secondItem="raN-ZK-YEc" secondAttribute="bottom" constant="80" id="RFY-Dv-erx"/>
+                            <constraint firstAttribute="trailing" secondItem="raN-ZK-YEc" secondAttribute="trailing" constant="20" id="UyJ-9U-jXc"/>
+                            <constraint firstItem="raN-ZK-YEc" firstAttribute="top" secondItem="zpa-Xw-yMC" secondAttribute="bottom" constant="40" id="gZS-Ql-zin"/>
+                            <constraint firstAttribute="trailing" secondItem="r0L-4a-XCk" secondAttribute="trailing" constant="20" id="h9L-Rn-cEa"/>
+                            <constraint firstItem="raN-ZK-YEc" firstAttribute="leading" secondItem="U6x-pN-E8f" secondAttribute="leading" constant="20" id="icO-2j-HQe"/>
+                            <constraint firstItem="XhN-5O-O1y" firstAttribute="leading" secondItem="U6x-pN-E8f" secondAttribute="leading" constant="20" id="k1E-dp-U3D"/>
+                            <constraint firstAttribute="trailing" secondItem="XhN-5O-O1y" secondAttribute="trailing" constant="20" id="kDE-oL-LA1"/>
+                            <constraint firstAttribute="trailing" secondItem="NZo-ml-6ez" secondAttribute="trailing" constant="20" id="mfI-Rz-SP3"/>
+                            <constraint firstItem="NZo-ml-6ez" firstAttribute="top" secondItem="XhN-5O-O1y" secondAttribute="bottom" constant="10" id="nXk-aQ-igt"/>
+                            <constraint firstItem="p7d-sy-4g7" firstAttribute="top" secondItem="NZo-ml-6ez" secondAttribute="bottom" constant="15" id="tv4-ZE-mvb"/>
+                            <constraint firstItem="W0U-Hq-enI" firstAttribute="top" secondItem="raN-ZK-YEc" secondAttribute="bottom" constant="10" id="wxG-6i-3xT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="XhN-5O-O1y" id="rw0-3b-br4"/>
+                        <outlet property="nameTextField" destination="r0L-4a-XCk" id="f13-QW-UQL"/>
+                        <outlet property="passwordTextField" destination="NZo-ml-6ez" id="1l9-Dy-In8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1G-SC-YFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="857"/>
+        </scene>
+    </scenes>
+</document>

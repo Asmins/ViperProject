@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2327e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="yNi-UK-DEu">
+            <objects>
+                <viewController id="ZmK-n2-XL7" customClass="SplashViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rFc-e0-ugA"/>
+                        <viewControllerLayoutGuide type="bottom" id="2uf-6V-ADL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Svx-Xs-zJA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="925-NW-LeN">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xw8-dD-Bel">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="nIK-VK-VJg"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.1661497887" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvJ-st-HtH">
+                                <state key="normal" title="SingUp">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.15923816120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xw8-dD-Bel" firstAttribute="height" secondItem="GvJ-st-HtH" secondAttribute="height" id="0D5-VO-PrB"/>
+                            <constraint firstItem="GvJ-st-HtH" firstAttribute="leading" secondItem="Xw8-dD-Bel" secondAttribute="trailing" constant="8" id="5K2-Ug-l4P"/>
+                            <constraint firstItem="2uf-6V-ADL" firstAttribute="top" secondItem="GvJ-st-HtH" secondAttribute="bottom" constant="20" id="82P-hj-TXC"/>
+                            <constraint firstItem="925-NW-LeN" firstAttribute="top" secondItem="rFc-e0-ugA" secondAttribute="bottom" constant="40" id="ANI-h8-RYb"/>
+                            <constraint firstItem="Xw8-dD-Bel" firstAttribute="width" secondItem="GvJ-st-HtH" secondAttribute="width" id="CA1-9J-tTs"/>
+                            <constraint firstItem="Xw8-dD-Bel" firstAttribute="leading" secondItem="Svx-Xs-zJA" secondAttribute="leading" id="V5q-8f-Ubd"/>
+                            <constraint firstAttribute="trailing" secondItem="GvJ-st-HtH" secondAttribute="trailing" id="ene-r5-0uk"/>
+                            <constraint firstItem="2uf-6V-ADL" firstAttribute="top" secondItem="Xw8-dD-Bel" secondAttribute="bottom" constant="20" id="gnZ-54-hYg"/>
+                            <constraint firstItem="925-NW-LeN" firstAttribute="leading" secondItem="Svx-Xs-zJA" secondAttribute="leading" constant="20" id="n8b-EC-Rgo"/>
+                            <constraint firstAttribute="trailing" secondItem="925-NW-LeN" secondAttribute="trailing" constant="20" id="xPA-wv-MUM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wwf-3e-VLo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rrm-RR-iVa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ufo-uX-UH7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gRV-Rh-vmA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UHh-nT-mTb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZmK-n2-XL7" kind="relationship" relationship="rootViewController" id="rcw-qf-HZn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bw3-EI-66M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

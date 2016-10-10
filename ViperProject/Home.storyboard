@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2327e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="ahb-ee-xAf">
+            <objects>
+                <viewController storyboardIdentifier="HomeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Frj-K3-2D5" customClass="HomeViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NWp-d8-sWP"/>
+                        <viewControllerLayoutGuide type="bottom" id="WnV-lP-VpK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ENt-KE-1vt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQz-oE-zYa">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSe-gL-eAc">
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.15923816120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutButton:" destination="Frj-K3-2D5" eventType="touchUpInside" id="Ljb-VB-wko"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W14-SG-fWA">
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Delete User">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.15923816120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteUserButton:" destination="Frj-K3-2D5" eventType="touchUpInside" id="9pG-a3-B7b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WnV-lP-VpK" firstAttribute="top" secondItem="lSe-gL-eAc" secondAttribute="bottom" constant="20" id="2lb-oK-sX5"/>
+                            <constraint firstItem="W14-SG-fWA" firstAttribute="leading" secondItem="ENt-KE-1vt" secondAttribute="leading" id="3tf-FJ-yFG"/>
+                            <constraint firstItem="WnV-lP-VpK" firstAttribute="top" secondItem="W14-SG-fWA" secondAttribute="bottom" constant="20" id="J2c-S5-6ek"/>
+                            <constraint firstItem="lSe-gL-eAc" firstAttribute="leading" secondItem="W14-SG-fWA" secondAttribute="trailing" constant="7.5" id="JxY-YM-dg4"/>
+                            <constraint firstItem="W14-SG-fWA" firstAttribute="width" secondItem="lSe-gL-eAc" secondAttribute="width" id="PhR-nM-4ya"/>
+                            <constraint firstAttribute="trailing" secondItem="lSe-gL-eAc" secondAttribute="trailing" constant="0.5" id="Rr7-j0-wsa"/>
+                            <constraint firstItem="W14-SG-fWA" firstAttribute="height" secondItem="lSe-gL-eAc" secondAttribute="height" id="bTL-VU-HAW"/>
+                            <constraint firstItem="sQz-oE-zYa" firstAttribute="centerX" secondItem="ENt-KE-1vt" secondAttribute="centerX" id="n7P-2S-C25"/>
+                            <constraint firstItem="sQz-oE-zYa" firstAttribute="centerY" secondItem="ENt-KE-1vt" secondAttribute="centerY" id="pqb-Sl-L7p"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIr-kQ-DA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
