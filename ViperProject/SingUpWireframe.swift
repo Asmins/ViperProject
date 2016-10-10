@@ -18,8 +18,8 @@ extension SingUpWireframe: SingUpWireframeProtocol {
         self.singUpViewController.dismiss(animated: true, completion: nil)
     }
     
-    func showHomeViewController() {
+   /* func showHomeViewController() {
         let homeViewController = UIStoryboard.init(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "HomeView") as! HomeViewController
         self.singUpViewController.present(homeViewController, animated: true, completion: nil)
-    }
+    } */
 }

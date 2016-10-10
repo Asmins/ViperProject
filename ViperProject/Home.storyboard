@@ -9,7 +9,7 @@
         <!--Home View Controller-->
         <scene sceneID="ahb-ee-xAf">
             <objects>
-                <viewController storyboardIdentifier="HomeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Frj-K3-2D5" customClass="HomeViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Frj-K3-2D5" customClass="HomeViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NWp-d8-sWP"/>
                         <viewControllerLayoutGuide type="bottom" id="WnV-lP-VpK"/>

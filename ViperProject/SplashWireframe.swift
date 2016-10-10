@@ -24,13 +24,17 @@ extension SplashWireframe: SplashWireframeProtocol {
     }
     
     func showLoginViewController() {
-        print("Some")
-    }
+        let loginViewController = UIStoryboard.init(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        loginViewController.interactor = LoginInteractor()
+        loginViewController.interactor.navitagion.viewController = loginViewController
+        loginViewController.navigation = LoginWireframe()
+        loginViewController.navigation.viewController = loginViewController
+        self.splashViewController?.present(loginViewController, animated: true, completion: nil)
+     }
     
     func showSingUpViewController() {
         let singUpViewController = UIStoryboard.init(name: "SingUp", bundle: nil).instantiateViewController(withIdentifier: "SingUpViewController") as! SingUpViewController
         singUpViewController.singUpInteractor = SingUpInteractor()
-        singUpViewController.singUpInteractor?.viewController = singUpViewController
         singUpViewController.singUpWireframe = SingUpWireframe()
         singUpViewController.singUpWireframe?.singUpViewController = singUpViewController
         self.splashViewController?.present(singUpViewController, animated: true, completion: nil)

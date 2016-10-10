@@ -9,7 +9,7 @@
         <!--Login View Controller-->
         <scene sceneID="QpN-4T-Qj3">
             <objects>
-                <viewController id="2ev-cp-fd9" customClass="LoginViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2ev-cp-fd9" customClass="LoginViewController" customModule="ViperProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0pm-lY-jtj"/>
                         <viewControllerLayoutGuide type="bottom" id="eZv-nT-cCv"/>

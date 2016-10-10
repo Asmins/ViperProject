@@ -26,7 +26,7 @@ class SingUpViewController: UIViewController {
     @IBAction func singUpButton(_ sender: AnyObject) {
         if emailTextField.text != nil || passwordTextField.text != nil {
             self.singUpInteractor?.createUser(userName: nameTextField.text!, password: passwordTextField.text!, email: emailTextField.text!)
-            self.singUpWireframe?.showHomeViewController()
+            self.singUpWireframe?.dismissSingUpViewController()
         }else{
             let alert = UIAlertController(title: "ERROR", message: "Please enter data", preferredStyle: .alert)
             let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)

@@ -6,4 +6,8 @@
 //  Copyright © 2016 Mozi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol LoginInteractorProtocol {
+    func loginUser(email:String,password:String,viewController:UIViewController)
+}

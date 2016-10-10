@@ -9,7 +9,6 @@
 import UIKit
 
 class SingUpInteractor {
-    var viewController = SingUpViewController()
     var realmModel = RealmModel()
 }
 

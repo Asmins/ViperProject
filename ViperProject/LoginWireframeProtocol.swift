@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol LoginWireframeProtocol {
+    func dismissView()
+    func showHomeViewController()
+}

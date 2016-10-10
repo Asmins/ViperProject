@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol LoginViewProtocol {
+    func loginUser()
+}
